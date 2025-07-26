@@ -1,0 +1,28 @@
+
+    {% extends 'base.html' %}
+    {% block cont %}  
+    {% load static %}
+    <!-- home section starts  -->
+
+    <section class="home">
+      <div class="image">
+        <img
+          src="{% static 'images/satishProfilePhoto.png' %}"
+          alt="blob:https://web.telegram.org/e612ec6d-bb2b-4778-bf2b-a9cb963438ce"
+        />
+      </div>
+
+      <div class="content">
+        <h3>Hi, i am Satish Maurya</h3>
+        <p>
+          I am a Student and also a front-end Developer. <br />
+          Live in Mumbai.{{name}}
+        </p>
+        <a href="about.html" class="btn">
+          About me <i class="fas fa-user"></i>
+        </a>
+      </div>
+    </section>
+{% endblock %}
+
+    {% include 'footer.html'%}

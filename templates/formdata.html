@@ -1,0 +1,19 @@
+
+    {% extends 'base.html' %}
+    {% block cont %}  
+    {% load static %}
+
+<html>
+    <body>
+        <p>
+        <p>{{name}} </p>
+            {% for d  in data %}
+            name:  {d.name}
+            {% endfor %}
+           
+        </p>
+    </body>
+</html>
+{% endblock %}
+
+{% include 'footer.html'%}

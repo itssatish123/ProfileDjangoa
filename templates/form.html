@@ -1,0 +1,20 @@
+
+<form  method = 'POST' action= "{% url 'thankYou' %}" class="contact-form">
+          
+    {% csrf_token %}
+          <div class="inputBox">
+            <input type="text" id="name" name ="name" placeholder="Your name...." />
+            <input type="email" id="emailid" name="email" placeholder="Your Email....." />
+            <textarea
+              id="msgContent"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+              name="message"
+
+            > {{name}} {{email}} {{data}}</textarea>
+            <!-- <input type="submit" value="send message" class="btn" /> -->
+             <button type="submit" Class="btn"> Submit form</button>
+          </div>
+          {{message}}
+        </form>

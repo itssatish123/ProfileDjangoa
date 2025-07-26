@@ -1,0 +1,151 @@
+
+    {% extends 'base.html' %}
+    {% block cont %}  
+    {% load static %}
+ {% csrf_token %}
+
+    <!-- about section starts  -->
+
+    <section class="about">
+        <h1 class="heading">{{name}} <span>me</span></h1>
+
+        <div class="row">
+            <div class="info-container">
+                <h1>Personal Info</h1>
+
+                <div class="box-container">
+                    <div class="box">
+                        <h3><span>name : </span> Satish Maurya</h3>
+                        <h3><span>address : </span> Kurla,Mumbai</h3>
+                        <h3><span>ability : </span> Dedicated, Self-Driven</h3>
+                       
+
+                    </div>
+
+                    <div class="box">
+                        <h3><span>skill : </span> SQL SERVER,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HTML, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS,
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INTERNET INFORMATION<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SERVER (IIS)</h3>
+                        <h3><span>Experience : </span> SOFTWARE APPLICATION SUPPORT</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="count-container">
+                <div class="box">
+                    <h3>Experience</h3>
+                    <p>Years of Experience<br>SOFTWARE APPLICATION SUPPORT</p>
+                </div>
+            </div>
+            {% for i in newsData %}
+            <div class="count-container">
+                <div class="box">
+                    <h3>{{ i.title}}</h3>
+                    <p>{{i.Descrition |safe }}  </p>
+                </div>
+            </div>
+            {% endfor %}
+            <div class="count-container">
+                <div class="box">
+                    <h3>PROFESSIONAL EXPERIENCE</h3>
+                    <p>
+                        <b>SOFTWARE APPLICATION SUPPORT 2022</b><br>
+                        <b>Professional ESolutions PVT.LTD, India, Mumbai</b><br> At Professional ESolutions PVT.LTD, I worked as a Software Application Support for 1+ years. My duties included resolving technical issues, providing customer service and
+                        training, testing applications and software solutions, and managing projects. My responsibilities included:
+                        <ul>
+                            <li>Providing customer support and troubleshooting software and computer issues</li>
+                            <li>Developing and implementing software solutions</li>
+                            <li>Testing new software applicatnios</li>
+                            <li>Training users on software applications</li>
+                            <li>Managing projects from inception to completion</li>
+                            <li>Collaborating with teams to ensure successful product launches</li>
+                            <li>Software testing and quality assurance.</li>
+                                {{email}}
+                        </ul> </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- skills section starts  -->
+
+    <section class="skills">
+        <h1 class="heading"><span>my</span> skills{{name}}</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="https://shorturl.at/noFK4" />
+                <h3>HtML</h3>
+            </div>
+            <div class="box">
+                <img src="https://shorturl.at/mHUX6" />
+                <h3>CSS</h3>
+            </div>
+            <div class="box">
+                <img src="https://shorturl.at/GLPV7" />
+                <h3>Javascript</h3>
+            </div>
+            <div class="box">
+                <img src="https://shorturl.at/nwIRT" />
+                <h3>SQL</h3>
+            </div>
+            <div class="box">
+                <img src="https://shorturl.at/INQVZ" />
+                <h3>Microsoft IIS</h3>
+            </div>
+            <div class="box">
+                <img src="https://shorturl.at/aiCLT" />
+                <h3>Cloud Computing </h3>
+            </div>
+    </section>
+
+    <!-- skills section ends -->
+
+    <!-- education section starts  -->
+
+    <section class="education">
+        <h1 class="heading"><span>my</span> education</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2019 - 2022</span>
+                <h3>front-end development</h3>
+                <p>
+                    My Education :- <br /> Graduated B.Sc-CS, in Mumbai
+                </p>
+            </div>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2022 - 2024</span>
+                <h3>Working Experience</h3>
+                <p>
+
+                    Professional ESolutions PVT.LTD<br /> , India, Mumbai
+                </p>
+            </div>
+        </div>
+        {% for i in educationData %}
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>{{i.Edu_date}}</span>
+                <h3>{{i.Edu_title}}</h3>
+                <p>
+                 {{i.Edu_Desc}}
+                </p>
+            </div>
+        </div>
+        {% endfor%}
+
+
+    </section>
+
+    <!-- education section ends -->
+{% endblock %}
+
+{% include 'footer.html'%}

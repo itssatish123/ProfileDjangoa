@@ -1,0 +1,31 @@
+
+    {% extends 'base.html' %}
+    {% block cont %}  
+    {% load static %}
+
+    <!-- portfolio section starts  -->
+
+    <section class="portfolio">
+      <h1 class="heading"><span>my</span> work</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="content">
+            <h3>project 01</h3>
+            <p>PORTFOLIO</p>
+            <a href="https://itssatish123.github.io/PORTFOLIO/">read more</a>
+          </div>
+        </div>
+        <div class="box">
+          <!-- <img src="images/bbt1.png" alt="" /> -->
+          <div class="content">
+            <h3>project 02</h3>
+            <p>PORTFOLIO</p>
+            <a href="https://itssatish123.github.io/PORTFOLIO/">read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}
+
+{% include 'footer.html'%}

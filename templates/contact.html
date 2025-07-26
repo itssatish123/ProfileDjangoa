@@ -1,0 +1,87 @@
+
+    {% extends 'base.html' %}
+    {% block cont %}  
+    {% load static %}
+    <!-- contact section starts  -->
+
+    <section class="contact">
+      <h1 class="heading">contact <span>me</span></h1>
+
+      <div class="row">
+        <div class="info-container">
+          <h1>get in touch</h1>
+
+          <p>
+            For any queries i am here for you, you can call me on the number
+            given below or mail me your queries :)
+          </p>
+
+          <div class="box-container">
+            <div class="box">
+              <i class="fas fa-map"></i>
+              <div class="info">
+                <h3>Address :</h3>
+                <p>Mumbai, India - 400070</p>
+              </div>
+            </div>
+
+            <div class="box">
+              <i class="fas fa-envelope"></i>
+              <div class="info">
+                <h3>email :</h3>
+                <p>satishmaurya2084@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="box">
+              <i class="fas fa-phone"></i>
+              <div class="info">
+                <h3>Number :</h3>
+                <p>
+                  <a
+                    href="https://web.whatsapp.com/send/?phone=919152064735"
+                    target="_main"
+                  >
+                    <span>9152064735</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="share">
+            <a
+              href="https://www.facebook.com/profile.php?id=100016009845608."
+              target="_main"
+              class="fab fa-facebook-f"
+            ></a>
+            <a
+              href="https://twitter.com/SATISH__MAURY"
+              target="_main"
+              class="fab fa-twitter"
+            ></a>
+            <a
+              href="https://www.instagram.com/satish___maurya./"
+              target="_main"
+              class="fab fa-instagram"
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/satish86521/"
+              target="_main"
+              class="fab fa-linkedin"
+            ></a>
+          </div>
+        </div>
+       
+        {% include 'form.html' %}
+        
+      </div>
+    </section>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="js/form.js"></script> -->
+
+    <!-- contact section ends -->
+{% endblock %}
+
+{% include 'footer.html'%}
+

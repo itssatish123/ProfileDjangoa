@@ -1,0 +1,61 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-CompatibLe" content="ie=edge" />
+    <title>PORTFOLIO</title>
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+   <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <!-- Upper only navbar links start -->
+    <link rel="stylesheet" href="{% static 'css/burger.css' %}" />
+    <script src="static/js/burger.js"></script>
+
+    <!-- Upper only navbar links middel part -->
+  </head>
+
+
+  <body>
+    <!-- Upper navbar body start -->
+    <div class="navbar-bur" id="myNavbar">
+      <a
+        href="/"
+        class="active"
+        >Home</a>
+      
+      <a href="/about">About</a>
+
+      <a href="/portfolio">Portfolio</a>
+
+      <a href="/contact">Contact</a>
+      <a
+        href="https://drive.google.com/file/d/1129KcQzM6SmEGfroSmQDeUr7cx4xQ0gr/view?usp=drive_link"
+        >Resume</a
+      >
+      <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+        &#9776;
+      </a>
+    </div>
+    <!-- Upper navbar End -->
+    <!-- navbar section starts  -->
+ 
+    <nav class="navbar">
+      <a href="/"> <i class="fas fa-home"></i> <span>Home</span> </a>
+      <a href="/about"> <i class="fas fa-user"></i> <span>About</span> </a>
+      <a href="/portfolio">
+        <i class="fas fa-briefcase"></i> <span>portfolio</span>
+      </a>
+      <a href="/contact">
+        <i class="fas fa-address-book"></i> <span>Contact</span>
+      </a>
+    </nav> 
+
+    <!-- navbar section ends -->
