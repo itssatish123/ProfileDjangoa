@@ -5,7 +5,6 @@ from operator import length_hint
 from sys import exception
 from django.shortcuts import render,redirect
 from django.http import HttpResponse,HttpResponseRedirect
-from flask import request
 from education.models import education
 from news.models import news
 from enqData.models import EnqData
